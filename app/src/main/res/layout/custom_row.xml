@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/workerPic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="2dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/pic2" />
+
+    <TextView
+        android:id="@+id/workerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:layout_weight="0.95" />
+
+    <TextView
+        android:id="@+id/taskET"
+        android:layout_width="120dp"
+        android:padding="2dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="TASK HERE"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/dateET"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:padding="2dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:hint="DUE DATE"
+        android:inputType="date" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:padding="2dp"
+        android:layout_width="0dp"
+        android:layout_height="45sp"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:text=""/>
+
+</LinearLayout>

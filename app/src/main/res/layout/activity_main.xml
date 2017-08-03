@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.salangsang.romeo.worker_task.MainActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/workerLV"
+        android:layout_height="200dp"
+        android:layout_below="@+id/nameTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/showButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="showClick"
+        android:backgroundTint="@color/colorAccent"
+        android:text="ASSIGN PERSONNEL A TASK"
+        android:layout_below="@+id/workerLV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="WORKER"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/assignmentTV"
+        android:gravity="center"
+        android:layout_width="185dp"
+        android:layout_height="40dp"
+        android:text="WORKLOAD"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/nameTV"
+        android:layout_toEndOf="@+id/nameTV" />
+
+    <TextView
+        android:id="@+id/dateTV"
+        android:layout_width="110dp"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:text="DATE"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/assignmentTV"
+        android:layout_toEndOf="@+id/assignmentTV" />
+
+    <TextView
+        android:id="@+id/statusTV"
+        android:gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:text="STAT"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/dateTV"
+        android:layout_toEndOf="@+id/dateTV" />
+
+</RelativeLayout>

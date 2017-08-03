@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.salangsang.romeo.worker_task.WorkerActivity">
+
+    <EditText
+        android:id="@+id/editTask"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="WORKER TASK HERE"
+        android:layout_below="@+id/editWorker"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/editWorker"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:hint="TYPE WORKER NAME"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/dateTV"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:ems="10"
+        android:background="@color/colorAccent"
+        android:inputType="date"
+        android:hint="CHOOSE DUE DATE"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/editTask"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:onClick="backClick"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="17dp"
+        android:text="MAIN DISPLAY"
+        android:layout_below="@+id/dateTV"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/addWorker"
+        android:onClick="addClick"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="ADD TO WORKER TASKS"
+        android:layout_below="@+id/backButton"
+        android:layout_alignLeft="@+id/backButton"
+        android:layout_alignStart="@+id/backButton" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:onClick="deleteClick"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="DELETE A TASK"
+        android:layout_below="@+id/addWorker"
+        android:layout_alignLeft="@+id/addWorker"
+        android:layout_alignStart="@+id/addWorker"
+        android:layout_marginTop="14dp" />
+    <Button
+        android:id="@+id/showWorker"
+        android:onClick="showAllClick"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="SHOW ALL TASKS"
+        android:layout_below="@+id/deleteButton"
+        android:layout_alignLeft="@+id/deleteButton"
+        android:layout_alignStart="@+id/deleteButton" />
+</RelativeLayout>
